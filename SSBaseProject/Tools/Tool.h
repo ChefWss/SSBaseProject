@@ -15,23 +15,29 @@
 //检测替换NSNull数据
 + (NSString *)replaceNull:(id)mes;
 
-//json字符串转常规数据
+//tableView上拉下拉消除
++ (void)endRefresh:(UITableView *)tabelView;
+
+//获取当前时间，日期 format @"YYYY/MM/dd HH:mm:ss"
++ (NSString *)getCurrentDate:(NSString *)format;
+
+//json字符串->常规数据
 + (id)contentWithJsonString:(NSString *)jsonString;
 
-//常规数据转json字符串
+//常规数据->json字符串
 + (NSString*)NSStringJson:(id)content;
 
 //检测字符串中是否有空字符
 + (NSString *)judgeSpace:(NSString *)msg;
-
-//tableView的fresh消除
-+ (void)endRefresh:(UITableView *)tabelView;
 
 //16进制色值转换
 + (UIColor *)colorWithHexString:(NSString *)hexString;
 
 //获取当前版本号
 + (NSString *)getCurrentVersion;
+
+//获取手机型号
++ (NSString *)IphoneType;
 
 //错误提示
 + (void)ShowMessage:(NSString *)msg Lasttime:(CGFloat)time;
@@ -58,8 +64,6 @@
 //判断是否银行卡号
 + (BOOL)checkBankCardNo:(NSString*)cardNo;
 
-//alertView提示框
-+(UIAlertView *)alertTitle:(NSString *)title message:(NSString *)msg delegate:(id)aDeleagte cancelBtn:(NSString *)cancelName otherBtnName:(NSString *)otherbuttonName;
 
 @end
 

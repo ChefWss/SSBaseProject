@@ -10,4 +10,19 @@
 
 @interface BaseModel : NSObject
 
+/**
+ * 通过一个字典创建一个model实例
+ */
+- (instancetype)initWithDic:(NSDictionary *)dic;
+
+/**
+ * 通过一个字典创建一个model实例，类方法
+ */
++ (instancetype)baseModelWithDic:(NSDictionary *)dic;
+
+/**
+ * 通过arr创建model数组
+ */
++ (NSMutableArray *)baseModelByArr:(NSArray *)arr;
+
 @end

@@ -10,12 +10,20 @@
 
 @implementation BaseView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+//删除所有子视图
++ (void)removeAllSubViewsFormView:(UIView *)view {
+    
+    for (UIView *v in view.subviews) {
+        [v removeFromSuperview];
+    }
 }
-*/
+//删除指定tag子试图
++ (void)removeSubviewWithTag:(NSInteger)tag fromView:(UIView *)view {
+    
+    UIView *v = [view viewWithTag:tag];
+    if (v) {
+        [v removeFromSuperview];
+    }
+}
 
 @end

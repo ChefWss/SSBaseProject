@@ -10,4 +10,9 @@
 
 @interface BaseView : UIView
 
+//删除所有子视图
++ (void)removeAllSubViewsFormView:(UIView *)view;
+//删除指定tag子试图
++ (void)removeSubviewWithTag:(NSInteger)tag fromView:(UIView *)view;
+
 @end
