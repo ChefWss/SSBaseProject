@@ -8,7 +8,11 @@
 
 #import "BaseViewController.h"
 
+
 @interface BaseViewController ()
+
+@property(nonatomic, strong) UIImageView *topImgView;
+@property(nonatomic, strong) UIView *topLine;
 
 @end
 
@@ -17,7 +21,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = kRandomColor;
+    self.view.backgroundColor = kBackground_GrayColor;
+    
+    [self setUpNav];
+    
+}
+
+- (void)setUpNav {
+    
+    self.topImgView = [[UIImageView alloc]init];
+    self.topImgView.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:self.topImgView];
+    [self.topImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.and.left.and.right.equalTo(self.view);
+        make.height.mas_equalTo(kStatusBarH + kNavigationBarH);
+    }];
+    
+    self.topLine = [[UIView alloc]init];
+    _topLine.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.2];
+    [self.view addSubview:_topLine];
+    [_topLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.bottom.equalTo(self.topImgView);
+        make.height.mas_equalTo(0.5);
+    }];
+    
 }
 
 #pragma mark - 获取当前控制器
@@ -52,6 +79,13 @@
         return vc;
     }
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.topImgView.hidden = _hidNavBar;
+    self.topLine.hidden = _hidNavBar;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

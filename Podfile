@@ -9,5 +9,7 @@ target 'SSBaseProject' do
   pod 'YYText'
   pod 'UICKeyChainStore', '~> 2.1.1'
   pod 'SDCycleScrollView'
+  #pod 'WRNavigationBar'
+  pod 'ReactiveCocoa','2.5'
 end
 

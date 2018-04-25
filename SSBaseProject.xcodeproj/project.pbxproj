@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CD3BF4C2020477C001C88E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BF4B2020477C001C88E2 /* AppDelegate.m */; };
-		5CD3BF4F2020477C001C88E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BF4E2020477C001C88E2 /* ViewController.m */; };
 		5CD3BF522020477C001C88E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3BF502020477C001C88E2 /* Main.storyboard */; };
 		5CD3BF542020477C001C88E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3BF532020477C001C88E2 /* Assets.xcassets */; };
 		5CD3BF572020477C001C88E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3BF552020477C001C88E2 /* LaunchScreen.storyboard */; };
@@ -24,9 +22,20 @@
 		5CD3BFB420205505001C88E2 /* TabTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BFB320205505001C88E2 /* TabTwoVC.m */; };
 		5CD3BFB720205513001C88E2 /* TabThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BFB620205513001C88E2 /* TabThreeVC.m */; };
 		5CD3BFBA20205766001C88E2 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BFB920205766001C88E2 /* Tool.m */; };
-		5CD3BFBD20205A64001C88E2 /* ApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BFBC20205A64001C88E2 /* ApiService.m */; };
 		5CD3BFC020205D05001C88E2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BFBF20205D05001C88E2 /* User.m */; };
 		5CD3BFC320205FE4001C88E2 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3BFC220205FE4001C88E2 /* LoginVC.m */; };
+		5CDAA18E2090126F00936FBF /* ApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA18D2090126F00936FBF /* ApiService.m */; };
+		5CDAA1922090127600936FBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1912090127600936FBF /* AppDelegate.m */; };
+		5CDAA1AB209015E700936FBF /* UIFont+SVCCFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA19D209015E600936FBF /* UIFont+SVCCFont.m */; };
+		5CDAA1AC209015E700936FBF /* UIImage+SVCCGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA19E209015E600936FBF /* UIImage+SVCCGradient.m */; };
+		5CDAA1AD209015E700936FBF /* UIButton+SVCCGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1A2209015E600936FBF /* UIButton+SVCCGradient.m */; };
+		5CDAA1AE209015E700936FBF /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1A3209015E700936FBF /* UITextView+Placeholder.m */; };
+		5CDAA1AF209015E700936FBF /* NSString+SVCCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1A4209015E700936FBF /* NSString+SVCCExtend.m */; };
+		5CDAA1B0209015E700936FBF /* UIImage+SVCCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1A5209015E700936FBF /* UIImage+SVCCExtend.m */; };
+		5CDAA1B1209015E700936FBF /* UIView+SVCCHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1A6209015E700936FBF /* UIView+SVCCHUD.m */; };
+		5CDAA1B2209015E700936FBF /* UIColor+SVCCHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1A8209015E700936FBF /* UIColor+SVCCHexColor.m */; };
+		5CDAA1B520901D5700936FBF /* Ono_Two_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1B420901D5700936FBF /* Ono_Two_VC.m */; };
+		5CDAA1B8209020A000936FBF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAA1B62090209F00936FBF /* UIView+Frame.m */; };
 		E17F4772D1EF208E6F11CFB9 /* libPods-SSBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 285CDF245139BBDC5A6ED30A /* libPods-SSBaseProject.a */; };
 /* End PBXBuildFile section */
 
@@ -51,10 +60,6 @@
 		0A8FF34029313BA65638D718 /* Pods-SSBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseProject/Pods-SSBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		285CDF245139BBDC5A6ED30A /* libPods-SSBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3BF472020477C001C88E2 /* SSBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CD3BF4A2020477C001C88E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5CD3BF4B2020477C001C88E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CD3BF4D2020477C001C88E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5CD3BF4E2020477C001C88E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5CD3BF512020477C001C88E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CD3BF532020477C001C88E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD3BF562020477C001C88E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,7 +71,6 @@
 		5CD3BF6A2020477D001C88E2 /* SSBaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSBaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3BF6E2020477D001C88E2 /* SSBaseProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBaseProjectUITests.m; sourceTree = "<group>"; };
 		5CD3BF702020477D001C88E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5CD3BF7C20204B7A001C88E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5CD3BF972020533D001C88E2 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		5CD3BF982020533D001C88E2 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		5CD3BF9A2020534E001C88E2 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -85,12 +89,38 @@
 		5CD3BFB620205513001C88E2 /* TabThreeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabThreeVC.m; sourceTree = "<group>"; };
 		5CD3BFB820205766001C88E2 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		5CD3BFB920205766001C88E2 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
-		5CD3BFBB20205A64001C88E2 /* ApiService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
-		5CD3BFBC20205A64001C88E2 /* ApiService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiService.m; sourceTree = "<group>"; };
 		5CD3BFBE20205D05001C88E2 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		5CD3BFBF20205D05001C88E2 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5CD3BFC120205FE4001C88E2 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		5CD3BFC220205FE4001C88E2 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		5CDAA18C2090126F00936FBF /* ApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
+		5CDAA18D2090126F00936FBF /* ApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiService.m; sourceTree = "<group>"; };
+		5CDAA1902090127600936FBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CDAA1912090127600936FBF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CDAA194209012B900936FBF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5CDAA1982090145100936FBF /* ColorDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDefinition.h; sourceTree = "<group>"; };
+		5CDAA1992090151400936FBF /* SomeDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeDefinitions.h; sourceTree = "<group>"; };
+		5CDAA19A2090155400936FBF /* UrlsDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlsDefinition.h; sourceTree = "<group>"; };
+		5CDAA19B209015E600936FBF /* NSString+SVCCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SVCCExtend.h"; sourceTree = "<group>"; };
+		5CDAA19C209015E600936FBF /* UIImage+SVCCGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVCCGradient.h"; sourceTree = "<group>"; };
+		5CDAA19D209015E600936FBF /* UIFont+SVCCFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SVCCFont.m"; sourceTree = "<group>"; };
+		5CDAA19E209015E600936FBF /* UIImage+SVCCGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVCCGradient.m"; sourceTree = "<group>"; };
+		5CDAA19F209015E600936FBF /* UIImage+SVCCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVCCExtend.h"; sourceTree = "<group>"; };
+		5CDAA1A0209015E600936FBF /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		5CDAA1A1209015E600936FBF /* UIView+SVCCHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SVCCHUD.h"; sourceTree = "<group>"; };
+		5CDAA1A2209015E600936FBF /* UIButton+SVCCGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SVCCGradient.m"; sourceTree = "<group>"; };
+		5CDAA1A3209015E700936FBF /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		5CDAA1A4209015E700936FBF /* NSString+SVCCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SVCCExtend.m"; sourceTree = "<group>"; };
+		5CDAA1A5209015E700936FBF /* UIImage+SVCCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVCCExtend.m"; sourceTree = "<group>"; };
+		5CDAA1A6209015E700936FBF /* UIView+SVCCHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SVCCHUD.m"; sourceTree = "<group>"; };
+		5CDAA1A7209015E700936FBF /* UIFont+SVCCFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SVCCFont.h"; sourceTree = "<group>"; };
+		5CDAA1A8209015E700936FBF /* UIColor+SVCCHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SVCCHexColor.m"; sourceTree = "<group>"; };
+		5CDAA1A9209015E700936FBF /* UIButton+SVCCGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SVCCGradient.h"; sourceTree = "<group>"; };
+		5CDAA1AA209015E700936FBF /* UIColor+SVCCHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SVCCHexColor.h"; sourceTree = "<group>"; };
+		5CDAA1B320901D5700936FBF /* Ono_Two_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ono_Two_VC.h; sourceTree = "<group>"; };
+		5CDAA1B420901D5700936FBF /* Ono_Two_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ono_Two_VC.m; sourceTree = "<group>"; };
+		5CDAA1B62090209F00936FBF /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		5CDAA1B7209020A000936FBF /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		9A7EAC49A0882DC65B2F63C5 /* Pods-SSBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseProject/Pods-SSBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,23 +183,22 @@
 		5CD3BF492020477C001C88E2 /* SSBaseProject */ = {
 			isa = PBXGroup;
 			children = (
-				5CD3BF4A2020477C001C88E2 /* AppDelegate.h */,
-				5CD3BF4B2020477C001C88E2 /* AppDelegate.m */,
-				5CD3BF4D2020477C001C88E2 /* ViewController.h */,
-				5CD3BF4E2020477C001C88E2 /* ViewController.m */,
+				5CDAA18F2090127600936FBF /* AppDelegate */,
 				5CD3BF88202052EE001C88E2 /* TabOne */,
-				5CD3BF8C202052EE001C88E2 /* TabThree */,
 				5CD3BF84202052EE001C88E2 /* TabTwo */,
+				5CD3BF8C202052EE001C88E2 /* TabThree */,
 				5CD3BF9220205305001C88E2 /* BaseMVC */,
 				5CD3BF9020205305001C88E2 /* Login */,
 				5CD3BF9620205305001C88E2 /* MainController */,
+				5CDAA18B2090126F00936FBF /* NetWork */,
 				5CD3BF9120205305001C88E2 /* Tools */,
+				5CDAA1952090139500936FBF /* Categorys */,
+				5CDAA193209012B900936FBF /* Definition */,
 				5CD3BF502020477C001C88E2 /* Main.storyboard */,
 				5CD3BF532020477C001C88E2 /* Assets.xcassets */,
 				5CD3BF552020477C001C88E2 /* LaunchScreen.storyboard */,
 				5CD3BF582020477C001C88E2 /* Info.plist */,
 				5CD3BF592020477C001C88E2 /* main.m */,
-				5CD3BF7C20204B7A001C88E2 /* PrefixHeader.pch */,
 			);
 			path = SSBaseProject;
 			sourceTree = "<group>";
@@ -240,6 +269,8 @@
 			children = (
 				5CD3BFAF202054F6001C88E2 /* TabOneVC.h */,
 				5CD3BFB0202054F6001C88E2 /* TabOneVC.m */,
+				5CDAA1B320901D5700936FBF /* Ono_Two_VC.h */,
+				5CDAA1B420901D5700936FBF /* Ono_Two_VC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,8 +336,6 @@
 			children = (
 				5CD3BFB820205766001C88E2 /* Tool.h */,
 				5CD3BFB920205766001C88E2 /* Tool.m */,
-				5CD3BFBB20205A64001C88E2 /* ApiService.h */,
-				5CD3BFBC20205A64001C88E2 /* ApiService.m */,
 				5CD3BFBE20205D05001C88E2 /* User.h */,
 				5CD3BFBF20205D05001C88E2 /* User.m */,
 			);
@@ -335,6 +364,60 @@
 				5CD3BFAD2020547B001C88E2 /* MainNavigationController.m */,
 			);
 			path = MainController;
+			sourceTree = "<group>";
+		};
+		5CDAA18B2090126F00936FBF /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				5CDAA18C2090126F00936FBF /* ApiService.h */,
+				5CDAA18D2090126F00936FBF /* ApiService.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		5CDAA18F2090127600936FBF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5CDAA1902090127600936FBF /* AppDelegate.h */,
+				5CDAA1912090127600936FBF /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5CDAA193209012B900936FBF /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+				5CDAA194209012B900936FBF /* PrefixHeader.pch */,
+				5CDAA19A2090155400936FBF /* UrlsDefinition.h */,
+				5CDAA1982090145100936FBF /* ColorDefinition.h */,
+				5CDAA1992090151400936FBF /* SomeDefinitions.h */,
+			);
+			path = Definition;
+			sourceTree = "<group>";
+		};
+		5CDAA1952090139500936FBF /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				5CDAA19B209015E600936FBF /* NSString+SVCCExtend.h */,
+				5CDAA1A4209015E700936FBF /* NSString+SVCCExtend.m */,
+				5CDAA1A9209015E700936FBF /* UIButton+SVCCGradient.h */,
+				5CDAA1A2209015E600936FBF /* UIButton+SVCCGradient.m */,
+				5CDAA1AA209015E700936FBF /* UIColor+SVCCHexColor.h */,
+				5CDAA1A8209015E700936FBF /* UIColor+SVCCHexColor.m */,
+				5CDAA1A7209015E700936FBF /* UIFont+SVCCFont.h */,
+				5CDAA19D209015E600936FBF /* UIFont+SVCCFont.m */,
+				5CDAA19F209015E600936FBF /* UIImage+SVCCExtend.h */,
+				5CDAA1A5209015E700936FBF /* UIImage+SVCCExtend.m */,
+				5CDAA19C209015E600936FBF /* UIImage+SVCCGradient.h */,
+				5CDAA19E209015E600936FBF /* UIImage+SVCCGradient.m */,
+				5CDAA1A0209015E600936FBF /* UITextView+Placeholder.h */,
+				5CDAA1A3209015E700936FBF /* UITextView+Placeholder.m */,
+				5CDAA1A1209015E600936FBF /* UIView+SVCCHUD.h */,
+				5CDAA1A6209015E700936FBF /* UIView+SVCCHUD.m */,
+				5CDAA1B7209020A000936FBF /* UIView+Frame.h */,
+				5CDAA1B62090209F00936FBF /* UIView+Frame.m */,
+			);
+			path = Categorys;
 			sourceTree = "<group>";
 		};
 		A8751478DEC5FA4FBE3E3544 /* Pods */ = {
@@ -536,19 +619,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD3BF4F2020477C001C88E2 /* ViewController.m in Sources */,
+				5CDAA1B8209020A000936FBF /* UIView+Frame.m in Sources */,
 				5CD3BF5A2020477C001C88E2 /* main.m in Sources */,
 				5CD3BFC320205FE4001C88E2 /* LoginVC.m in Sources */,
 				5CD3BFB720205513001C88E2 /* TabThreeVC.m in Sources */,
 				5CD3BFBA20205766001C88E2 /* Tool.m in Sources */,
-				5CD3BF4C2020477C001C88E2 /* AppDelegate.m in Sources */,
+				5CDAA1B1209015E700936FBF /* UIView+SVCCHUD.m in Sources */,
 				5CD3BFB420205505001C88E2 /* TabTwoVC.m in Sources */,
 				5CD3BFB1202054F6001C88E2 /* TabOneVC.m in Sources */,
+				5CDAA1B0209015E700936FBF /* UIImage+SVCCExtend.m in Sources */,
+				5CDAA1922090127600936FBF /* AppDelegate.m in Sources */,
+				5CDAA1AE209015E700936FBF /* UITextView+Placeholder.m in Sources */,
 				5CD3BF9C2020534E001C88E2 /* BaseModel.m in Sources */,
 				5CD3BFC020205D05001C88E2 /* User.m in Sources */,
-				5CD3BFBD20205A64001C88E2 /* ApiService.m in Sources */,
+				5CDAA18E2090126F00936FBF /* ApiService.m in Sources */,
+				5CDAA1AF209015E700936FBF /* NSString+SVCCExtend.m in Sources */,
+				5CDAA1AC209015E700936FBF /* UIImage+SVCCGradient.m in Sources */,
+				5CDAA1AD209015E700936FBF /* UIButton+SVCCGradient.m in Sources */,
+				5CDAA1B2209015E700936FBF /* UIColor+SVCCHexColor.m in Sources */,
 				5CD3BFA5202053D1001C88E2 /* MainTabBarController.m in Sources */,
+				5CDAA1B520901D5700936FBF /* Ono_Two_VC.m in Sources */,
 				5CD3BFAB2020543F001C88E2 /* BaseViewController.m in Sources */,
+				5CDAA1AB209015E700936FBF /* UIFont+SVCCFont.m in Sources */,
 				5CD3BFAE2020547B001C88E2 /* MainNavigationController.m in Sources */,
 				5CD3BF992020533D001C88E2 /* BaseView.m in Sources */,
 			);
@@ -716,7 +808,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UJH8VTQUX;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SSBaseProject/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SSBaseProject/Definition/PrefixHeader.pch";
 				INFOPLIST_FILE = SSBaseProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wss-github.SSBaseProject";
@@ -732,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UJH8VTQUX;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SSBaseProject/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SSBaseProject/Definition/PrefixHeader.pch";
 				INFOPLIST_FILE = SSBaseProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wss-github.SSBaseProject";

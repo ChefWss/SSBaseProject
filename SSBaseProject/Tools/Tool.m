@@ -238,9 +238,6 @@
     if (!msg) {
         msg = @"网络错误";
     }
-    if (time == 0) {
-        time = kMessageShowTime;
-    }
     UIWindow *window = [UIApplication sharedApplication].delegate.window;
     
     UIView *backView = [[UIView alloc]init];
@@ -271,24 +268,12 @@
         make.center.and.width.height.equalTo(backView);
     }];
     
-    if (time == kMessageShowTime) {
-        [UIView animateWithDuration:kMessageShowTime * 0.55 animations:^{
-            backView.alpha = 0.75f;
-        } completion:^(BOOL finished) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kMessageShowTime * 0.45 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                //view从window上消失
-                [backView removeFromSuperview];
-            });
-        }];
-    }
-    else {
-        [UIView animateWithDuration:time animations:^{
-            backView.alpha = 0.75f;
-        } completion:^(BOOL finished) {
-            //view从window上消失
-            [backView removeFromSuperview];
-        }];
-    }
+    [UIView animateWithDuration:time animations:^{
+        backView.alpha = 0.75f;
+    } completion:^(BOOL finished) {
+        //view从window上消失
+        [backView removeFromSuperview];
+    }];
 }
 
 + (CGRect)getHetght:(NSString *)str width:(CGFloat)width font:(CGFloat)font {

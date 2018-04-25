@@ -14,20 +14,22 @@
     [super viewDidLoad];
     
     //取消导航栏毛玻璃半透明效果
-    self.navigationBar.translucent = NO;
-    self.navigationBar.barTintColor = [UIColor whiteColor];
+//    self.navigationBar.translucent = NO;
+//    self.navigationBar.barTintColor = [UIColor redColor];
+    
+    //讲导航栏设置成透明
+    self.navigationBar.translucent=YES;
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"touming"] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationBar setBackgroundImage:[UIImage imageFromColor:[UIColor redColor]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setShadowImage:[[UIImage alloc]init]];
+    
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
-        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backButton setImage:[[UIImage imageNamed:@"fanhui"] imageWithRenderingMode:1] forState:UIControlStateNormal];
-        [backButton addTarget:self action:@selector(popVC) forControlEvents:UIControlEventTouchUpInside];
-        [backButton sizeToFit];
-        // 设置返回按钮
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+//        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"fanhui"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     }
     [super pushViewController:viewController animated:animated];
 }

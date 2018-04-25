@@ -7,6 +7,7 @@
 //
 
 #import "TabOneVC.h"
+#import "Ono_Two_VC.h"
 
 @interface TabOneVC ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    self.hidNavBar = YES;
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:button];
+    button.backgroundColor = [UIColor purpleColor];
+    button.frame = CGRectMake(kPERCENT(100), kPERCENT(200), kPERCENT(20), kPERCENT(20));
+    [button setEnlargeEdge:kPERCENT(100)];
+    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        Ono_Two_VC *vc = [[Ono_Two_VC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

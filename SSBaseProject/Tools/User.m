@@ -10,7 +10,7 @@
 
 @implementation User
 
-+ (User *)shareJZUser {
++ (User *)shareUser {
     static dispatch_once_t onceToken;
     static User *instance;
     dispatch_once(&onceToken, ^{

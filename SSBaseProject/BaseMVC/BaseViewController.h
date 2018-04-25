@@ -12,4 +12,6 @@
 
 + (UIViewController *)currentViewController;
 
+@property(nonatomic, assign) BOOL hidNavBar;
+
 @end

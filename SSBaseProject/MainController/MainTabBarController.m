@@ -24,7 +24,11 @@
 }
 
 - (void)setupAllChildViewControllers {
-    [self setupChildViewController:[[TabOneVC alloc] init] Title:@"tab1" ImageName:@"tabbar-1" SelectedImageName:@"tabbar-1-color"];
+    
+    TabOneVC *vc = [[TabOneVC alloc] init];
+    vc.hidNavBar = YES;
+    
+    [self setupChildViewController:vc Title:@"tab1" ImageName:@"tabbar-1" SelectedImageName:@"tabbar-1-color"];
     [self setupChildViewController:[[TabTwoVC alloc] init] Title:@"tab2" ImageName:@"tabbar-2" SelectedImageName:@"tabbar-2-color"];
     [self setupChildViewController:[[TabThreeVC alloc] init] Title:@"tab3" ImageName:@"tabbar-3" SelectedImageName:@"tabbar-3-color"];
 }
@@ -49,8 +53,8 @@
     
     
     MainNavigationController *nav = [[MainNavigationController alloc] initWithRootViewController:childVc];
-    nav.navigationBar.tintColor = [UIColor orangeColor];
-    nav.navigationBar.barTintColor = [UIColor whiteColor];
+    nav.navigationBar.tintColor = [UIColor blueColor];
+    nav.navigationBar.barTintColor = [UIColor redColor];
     [nav.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor colorWithWhite:0 alpha:0.7], NSFontAttributeName:[UIFont fontWithName:@"Helvetica-Bold" size:17]}];
     [self addChildViewController:nav];
