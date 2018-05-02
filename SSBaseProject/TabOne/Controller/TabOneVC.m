@@ -18,11 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.hidNavBar = YES;
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:button];
-    button.backgroundColor = [UIColor purpleColor];
+    button.backgroundColor = [UIColor orangeColor];
     button.frame = CGRectMake(kPERCENT(100), kPERCENT(200), kPERCENT(20), kPERCENT(20));
     [button setEnlargeEdge:kPERCENT(100)];
     [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
