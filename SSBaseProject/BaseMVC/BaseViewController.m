@@ -24,22 +24,24 @@
     self.view.backgroundColor = kBackground_GrayColor;
     
     [self setUpNav];
-    
 }
 
-- (void)setUpNav {
-    
+- (void)setUpNav
+{
     self.topImgView = [[UIImageView alloc]init];
     self.topImgView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:self.topImgView];
+    
     [self.topImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.and.left.and.right.equalTo(self.view);
         make.height.mas_equalTo(kStatusBarH + kNavigationBarH);
     }];
     
+    
     self.topLine = [[UIView alloc]init];
     _topLine.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.2];
     [self.view addSubview:_topLine];
+    
     [_topLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.and.right.bottom.equalTo(self.topImgView);
         make.height.mas_equalTo(0.5);

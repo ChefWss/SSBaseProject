@@ -268,6 +268,7 @@
         make.center.and.width.height.equalTo(backView);
     }];
     
+    //消失
     [UIView animateWithDuration:time animations:^{
         backView.alpha = 0.75f;
     } completion:^(BOOL finished) {
